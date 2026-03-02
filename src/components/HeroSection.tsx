@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import schoolLogo from "@/assets/school-logo.jpg";
 
@@ -59,10 +59,20 @@ const HeroSection = () => {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.9, duration: 0.8 }}
-          className="text-lg text-primary-foreground/70 mb-10 font-body"
+          className="text-lg text-primary-foreground/70 mb-3 font-body"
         >
           Nurturing Minds, Building Futures — Gara
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 1.0, duration: 0.6 }}
+          className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-gold/30 bg-gold/10 backdrop-blur-sm mb-10"
+        >
+          <Sparkles className="w-4 h-4 text-gold" />
+          <span className="text-sm font-medium text-gold-light">Play School to 10th Class</span>
+        </motion.div>
 
         <motion.div
           initial={{ y: 30, opacity: 0 }}

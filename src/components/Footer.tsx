@@ -46,11 +46,11 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-bold mb-4 text-gold">Academic</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li>Primary School</li>
-              <li>Middle School</li>
-              <li>Secondary School</li>
-              <li>Higher Secondary</li>
-              <li>Exam Results</li>
+              <li>Play School</li>
+              <li>Nursery - UKG</li>
+              <li>Primary School (I-V)</li>
+              <li>Middle School (VI-VIII)</li>
+              <li>Secondary School (IX-X)</li>
             </ul>
           </div>
 
