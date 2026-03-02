@@ -38,14 +38,14 @@ const AboutSection = () => {
               Shaping Tomorrow's Leaders Today
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Santhiniketan School, Gara, is dedicated to providing holistic education that nurtures
-              intellectual curiosity, moral values, and creative thinking. Inspired by the teachings of
-              Rabindranath Tagore, we believe that education should be a joyful journey of discovery.
+              Santhiniketan School, Gara, offers a complete education from Play School through 10th Class.
+              We nurture intellectual curiosity, moral values, and creative thinking through a joyful
+              journey of discovery — from early childhood play-based learning to board exam excellence.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
               Our experienced faculty, modern infrastructure, and emphasis on both academic excellence
-              and extracurricular activities create an environment where every student can thrive and
-              reach their full potential.
+              and extracurricular activities create an environment where every child — from toddlers
+              to teenagers — can thrive and reach their full potential.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
