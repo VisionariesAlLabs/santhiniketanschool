@@ -47,8 +47,8 @@ const Navbar = () => {
       <div className="gradient-navy text-primary-foreground text-sm py-2 px-4 hidden md:block">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex gap-6">
-            <span className="flex items-center gap-1"><Phone className="w-3 h-3" /> +91 98765 43210</span>
-            <span className="flex items-center gap-1"><Mail className="w-3 h-3" /> info@santhiniketan.edu</span>
+            <a href="tel:+919441883589" className="flex items-center gap-1 hover:text-gold transition-colors"><Phone className="w-3 h-3" /> +91 9441883589</a>
+            <a href="mailto:santiniketanschoolgara@gmail.com" className="flex items-center gap-1 hover:text-gold transition-colors"><Mail className="w-3 h-3" /> santiniketanschoolgara@gmail.com</a>
           </div>
           <span className="font-display italic">"Knowledge is Power"</span>
         </div>
@@ -75,7 +75,7 @@ const Navbar = () => {
               <h1 className="text-lg font-display font-bold text-primary leading-tight">
                 Santhiniketan School
               </h1>
-              <p className="text-xs text-muted-foreground">Gara</p>
+              <p className="text-xs text-muted-foreground">Gara, Srikakulam</p>
             </div>
           </a>
 
@@ -139,6 +139,15 @@ const Navbar = () => {
                     {link.label}
                   </motion.button>
                 ))}
+                {/* Mobile contact info */}
+                <div className="mt-4 pt-4 border-t border-border space-y-2">
+                  <a href="tel:+919441883589" className="flex items-center gap-2 text-sm text-muted-foreground px-4">
+                    <Phone className="w-3.5 h-3.5" /> +91 9441883589
+                  </a>
+                  <a href="mailto:santiniketanschoolgara@gmail.com" className="flex items-center gap-2 text-sm text-muted-foreground px-4">
+                    <Mail className="w-3.5 h-3.5" /> santiniketanschoolgara@gmail.com
+                  </a>
+                </div>
               </div>
             </motion.div>
           )}

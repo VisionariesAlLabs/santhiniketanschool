@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Heart, Facebook, Instagram, Youtube, Twitter } from "lucide-react";
+import { Heart, Facebook, Instagram, Youtube, Twitter, Phone, Mail } from "lucide-react";
 import schoolLogo from "@/assets/school-logo.jpg";
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-primary-foreground/70 leading-relaxed">
-              Nurturing young minds with quality education, moral values, and holistic development since 2000.
+              Nurturing young minds with quality education, moral values, and holistic development since 1988.
             </p>
           </div>
 
@@ -54,10 +54,21 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Contact & Social */}
           <div>
-            <h4 className="font-display font-bold mb-4 text-gold">Follow Us</h4>
-            <div className="flex gap-3 mb-6">
+            <h4 className="font-display font-bold mb-4 text-gold">Contact Us</h4>
+            <div className="space-y-3 mb-6">
+              <a href="tel:+919441883589" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-gold transition-colors">
+                <Phone className="w-3.5 h-3.5" /> +91 9441883589
+              </a>
+              <a href="tel:+919494100300" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-gold transition-colors">
+                <Phone className="w-3.5 h-3.5" /> +91 9494100300
+              </a>
+              <a href="mailto:santiniketanschoolgara@gmail.com" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-gold transition-colors">
+                <Mail className="w-3.5 h-3.5" /> santiniketanschoolgara@gmail.com
+              </a>
+            </div>
+            <div className="flex gap-3">
               {[Facebook, Instagram, Youtube, Twitter].map((Icon, i) => (
                 <motion.a
                   key={i}
@@ -69,9 +80,6 @@ const Footer = () => {
                 </motion.a>
               ))}
             </div>
-            <p className="text-sm text-primary-foreground/70">
-              Subscribe for updates and news from our school.
-            </p>
           </div>
         </div>
       </div>

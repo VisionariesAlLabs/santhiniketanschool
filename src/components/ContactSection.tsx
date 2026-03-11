@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "./useScrollAnimation";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, User } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -46,19 +46,57 @@ const ContactSection = () => {
           >
             <h3 className="text-xl font-display font-bold text-primary mb-6">Contact Information</h3>
             <div className="space-y-5">
-              {[
-                { icon: <MapPin className="w-5 h-5" />, label: "Address", value: "Santhiniketan School, Gara, Srikakulam District, Andhra Pradesh" },
-                { icon: <Phone className="w-5 h-5" />, label: "Phone", value: "+91 98765 43210" },
-                { icon: <Mail className="w-5 h-5" />, label: "Email", value: "info@santhiniketan.edu" },
-                { icon: <Clock className="w-5 h-5" />, label: "Office Hours", value: "Mon - Sat: 8:00 AM - 4:00 PM" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-start gap-4">
-                  <div className="p-3 bg-secondary/10 text-secondary rounded-lg">{item.icon}</div>
-                  <div>
-                    <p className="font-semibold text-foreground text-sm">{item.label}</p>
-                    <p className="text-muted-foreground text-sm">{item.value}</p>
-                  </div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-secondary/10 text-secondary rounded-lg"><MapPin className="w-5 h-5" /></div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm">Address</p>
+                  <p className="text-muted-foreground text-sm">Santhiniketan School, Gara, Srikakulam District, Andhra Pradesh</p>
                 </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-secondary/10 text-secondary rounded-lg"><Mail className="w-5 h-5" /></div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm">School Email</p>
+                  <a href="mailto:santiniketanschoolgara@gmail.com" className="text-muted-foreground text-sm hover:text-secondary transition-colors">santiniketanschoolgara@gmail.com</a>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-secondary/10 text-secondary rounded-lg"><Clock className="w-5 h-5" /></div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm">Office Hours</p>
+                  <p className="text-muted-foreground text-sm">Mon - Sat: 8:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Management Contacts */}
+            <div className="mt-8 space-y-4">
+              <h4 className="font-display font-bold text-primary text-base">Management</h4>
+              {[
+                { name: "Korlam Appalacharyulu", role: "Correspondent", phone: "9441883589", email: "appalacharyulukorlam@gmail.com" },
+                { name: "Korlam Deepchand", role: "Director", phone: "9494100300", email: "deepchandkorlam@gmail.com" },
+              ].map((person) => (
+                <motion.div
+                  key={person.name}
+                  whileHover={{ x: 4 }}
+                  className="bg-card rounded-xl p-4 border border-border shadow-sm"
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-2 bg-gold/10 text-gold rounded-full"><User className="w-4 h-4" /></div>
+                    <div>
+                      <p className="font-semibold text-foreground text-sm">{person.name}</p>
+                      <p className="text-xs text-muted-foreground">{person.role}</p>
+                    </div>
+                  </div>
+                  <div className="pl-11 space-y-1">
+                    <a href={`tel:+91${person.phone}`} className="flex items-center gap-2 text-xs text-muted-foreground hover:text-secondary transition-colors">
+                      <Phone className="w-3 h-3" /> +91 {person.phone}
+                    </a>
+                    <a href={`mailto:${person.email}`} className="flex items-center gap-2 text-xs text-muted-foreground hover:text-secondary transition-colors">
+                      <Mail className="w-3 h-3" /> {person.email}
+                    </a>
+                  </div>
+                </motion.div>
               ))}
             </div>
 
