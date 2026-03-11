@@ -12,6 +12,8 @@ import rangoliImg from "@/assets/rangoli.jpg";
 import schoolBusImg from "@/assets/school-bus.jpg";
 import meditationImg from "@/assets/meditation.jpg";
 import newspaperImg from "@/assets/newspaper.jpg";
+import awardCeremony1 from "@/assets/award-ceremony1.jpg";
+import awardCeremony2 from "@/assets/award-ceremony2.jpg";
 
 const images = [
   { src: campusEntrance, caption: "Campus Entrance — Palm-Lined Pathway", category: "Campus" },
@@ -24,6 +26,8 @@ const images = [
   { src: meditationImg, caption: "Yoga & Meditation Session", category: "Activities" },
   { src: schoolBusImg, caption: "School Transport Fleet", category: "Campus" },
   { src: newspaperImg, caption: "Media Coverage — 34 Years of Excellence", category: "Achievements" },
+  { src: awardCeremony1, caption: "Scout Certificate Award Ceremony", category: "Achievements" },
+  { src: awardCeremony2, caption: "Scouts & Guides Certificate Distribution", category: "Achievements" },
 ];
 
 const categories = ["All", "Campus", "Academics", "Activities", "Events", "Achievements"];
