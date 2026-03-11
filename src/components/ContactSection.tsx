@@ -104,7 +104,7 @@ const ContactSection = () => {
             <div className="mt-8 rounded-xl overflow-hidden h-48 bg-muted border border-border">
               <iframe
                 title="School Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.8!2d84.0!3d18.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDE4JzAwLjAiTiA4NMKwMDAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3787.4154762996686!2d84.04819207518703!3d18.32832038272832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c38847fabf7eb%3A0xf3897436917dc75!2sSantiniketan%20School%2C%20Gara!5e0!3m2!1sen!2sin!4v1773230293259!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
