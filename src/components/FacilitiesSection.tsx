@@ -1,19 +1,20 @@
 import { motion } from "framer-motion";
 import { useScrollAnimation } from "./useScrollAnimation";
-import scienceLabImg from "@/assets/science-lab.jpg";
-import libraryImg from "@/assets/library.jpg";
-import sportsImg from "@/assets/sports.jpg";
-import { FlaskConical, BookOpen, Trophy, Monitor, Bus, Utensils } from "lucide-react";
+import classroomImg from "@/assets/classroom.jpg";
+import schoolBusImg from "@/assets/school-bus.jpg";
+import meditationImg from "@/assets/meditation.jpg";
+import { FlaskConical, BookOpen, Trophy, Monitor, Bus, Utensils, Leaf } from "lucide-react";
 
 const facilities = [
-  { img: scienceLabImg, icon: <FlaskConical className="w-6 h-6" />, title: "Science Laboratories", desc: "Well-equipped physics, chemistry, and biology labs with modern instruments for hands-on experiments." },
-  { img: libraryImg, icon: <BookOpen className="w-6 h-6" />, title: "Library & Media Center", desc: "Over 10,000 books, digital resources, and a quiet reading space for research and exploration." },
-  { img: sportsImg, icon: <Trophy className="w-6 h-6" />, title: "Sports Complex", desc: "Cricket ground, basketball court, running track, and indoor games facility for all-round development." },
+  { img: classroomImg, icon: <BookOpen className="w-6 h-6" />, title: "Smart Classrooms", desc: "Digital classrooms with modern teaching aids, GD group programs, and daily progress reports via TV for every class." },
+  { img: schoolBusImg, icon: <Bus className="w-6 h-6" />, title: "School Transport", desc: "Safe and reliable school bus fleet covering Gara, Srikakulam, and surrounding villages with GPS tracking." },
+  { img: meditationImg, icon: <Leaf className="w-6 h-6" />, title: "Yoga & Meditation", desc: "Regular yoga and meditation sessions fostering mental wellness, discipline, and spiritual growth among students." },
 ];
 
 const otherFacilities = [
+  { icon: <FlaskConical className="w-5 h-5" />, name: "Science Lab" },
   { icon: <Monitor className="w-5 h-5" />, name: "Computer Lab" },
-  { icon: <Bus className="w-5 h-5" />, name: "Transport" },
+  { icon: <Trophy className="w-5 h-5" />, name: "Sports Ground" },
   { icon: <Utensils className="w-5 h-5" />, name: "Canteen" },
 ];
 
