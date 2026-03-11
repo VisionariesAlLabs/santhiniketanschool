@@ -14,6 +14,12 @@ import meditationImg from "@/assets/meditation.jpg";
 import newspaperImg from "@/assets/newspaper.jpg";
 import awardCeremony1 from "@/assets/award-ceremony1.jpg";
 import awardCeremony2 from "@/assets/award-ceremony2.jpg";
+import ferrisWheelImg from "@/assets/ferris-wheel.jpg";
+import joyRideImg from "@/assets/joy-ride.jpg";
+import staffGroupImg from "@/assets/staff-group.jpg";
+import studentsAssemblyImg from "@/assets/students-assembly.jpg";
+import sportsImg from "@/assets/sports.jpg";
+import schoolBannerImg from "@/assets/school-banner.jpg";
 
 const images = [
   { src: campusEntrance, caption: "Campus Entrance — Palm-Lined Pathway", category: "Campus" },
@@ -28,6 +34,12 @@ const images = [
   { src: newspaperImg, caption: "Media Coverage — 34 Years of Excellence", category: "Achievements" },
   { src: awardCeremony1, caption: "Scout Certificate Award Ceremony", category: "Achievements" },
   { src: awardCeremony2, caption: "Scouts & Guides Certificate Distribution", category: "Achievements" },
+  { src: ferrisWheelImg, caption: "School Excursion — Fun at the Fair", category: "Events" },
+  { src: joyRideImg, caption: "Joy Ride — Students Having Fun", category: "Events" },
+  { src: staffGroupImg, caption: "Our Dedicated Teaching Staff", category: "Campus" },
+  { src: studentsAssemblyImg, caption: "Students Outdoor Assembly", category: "Activities" },
+  { src: sportsImg, caption: "Cricket Team Celebration", category: "Activities" },
+  { src: schoolBannerImg, caption: "School Staff & Management", category: "Campus" },
 ];
 
 const categories = ["All", "Campus", "Academics", "Activities", "Events", "Achievements"];
